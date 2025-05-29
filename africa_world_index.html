@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Worlds</title>
+    <!--Link to css-->
+    <link href="animal_worlds_child_main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--Logo as Card Object-->
+    <div class="logo">
+        <div class="card">
+            <img class="card--avater" src="images/zoologo.png"/>
+        </div>
+    </div>
+    <!--Navigation Bar-->
+    <div class="navcontainer">
+        <div class="nav--item">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav--item">
+            <a href="special_events_index.html">Special Events</a>
+        </div>
+        <div class="nav--item">
+            <a href="zoo_map_index.html">Zoo Map</a>
+        </div>
+        <div class="nav--item">
+            <a href="online_catalog_index.html">Online Catalog</a>
+        </div>
+        <div class="nav--item">
+            <a href="restaurants_index.html">Restaurants</a>
+        </div>
+        <div class="nav--item">
+            <a href="newsletter_index.html">Newsletter</a>
+        </div>
+        <div class="nav--item">
+            <a href="newsletter_reg_index.html">Newsletter Registration</a>
+        </div>
+        <div class="nav--item">
+            <a href="animal_worlds_index.html">Animal Worlds</a>
+        </div>
+    </div>
+    <!--Content-->
+    <!--Farm World-->
+    <div class="contentcontainer">
+        <div class="content--item--1">
+            <h1>Africa World</h1>
+        </div>
+    </div>
+    <div class="contentcontainer">
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                <img class="img--content" src="images/lion1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                <img class="img--content" src="images/zebra1.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="column">
+                <img class="img--content" src="images/rhino1.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img class="img--slide" src="images/lion1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img class="img--slide" src="images/lion2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img class="img--slide" src="images/lion3.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img class="img--slide" src="images/zebra1.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img class="img--slide" src="images/zebra2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img class="img--slide" src="images/zebra3.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img class="img--slide" src="images/rhino1.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img class="img--slide" src="images/rhino2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img class="img--slide" src="images/rhino3.png" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column--thumb">
+                    <img class="demo" src="images/lion1.png" onclick="currentSlide(1)" alt="Lions">
+                </div>
+            
+                <div class="column--thumb">
+                    <img class="demo" src="images/lion2.png" onclick="currentSlide(2)" alt="Lions">
+                </div>
+            
+                <div class="column--thumb">
+                    <img class="demo" src="images/lion3.png" onclick="currentSlide(3)" alt="Lions">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/zebra1.png" onclick="currentSlide(4)" alt="Zebras">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/zebra2.png" onclick="currentSlide(5)" alt="Zebras">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/zebra3.png" onclick="currentSlide(6)" alt="Zebras">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/rhino1.png" onclick="currentSlide(7)" alt="Rhinos">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/rhino2.png" onclick="currentSlide(8)" alt="Rhinos">
+                </div>
+                <div class="column--thumb">
+                    <img class="demo" src="images/rhino3.png" onclick="currentSlide(9)" alt="Rhinos">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer--item">
+            <h3>Contact Us:</h3>
+            <p>(660) 225-7389</p>
+            <p>hughsonzoo@gmail.com</p>
+        </div>
+        <div class="footer--item">
+            <h3>Location:</h3>
+            <p>1122 NE Walson Street</p>
+        </div>
+        <div class="footer--item">
+            <h3>Hours:</h3>
+            <p>Monday-Saturday: 7AM-7PM</p>
+            <p>Sunday: 7AM-6PM</p>
+        </div>
+    </div>
+
+    <!--JavaScript for Lightbox-->
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    
+</body>
+</html>
